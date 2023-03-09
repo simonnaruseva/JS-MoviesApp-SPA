@@ -5,7 +5,7 @@ export default async function catalog() {
     
     };
 
-    this.partial('./templates/movie/catalog.hbs');
+    this.partial('./templates/movie/catalog.hbs', this.app.userData);
 }
 
 export async function create() {
@@ -15,7 +15,7 @@ export async function create() {
     
     };
 
-    this.partial('./templates/movie/create.hbs');
+    this.partial('./templates/movie/create.hbs', this.app.userData);
 }
 
 export async function details() {
@@ -25,7 +25,7 @@ export async function details() {
     
     };
 
-    this.partial('./templates/movie/details.hbs');
+    this.partial('./templates/movie/details.hbs', this.app.userData);
 }
 
 
@@ -36,5 +36,5 @@ export async function edit() {
     
     };
 
-    this.partial('./templates/movie/edit.hbs');
+    this.partial('./templates/movie/edit.hbs', this.app.userData);
 }
